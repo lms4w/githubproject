@@ -40,6 +40,8 @@ Search recommended by Shawn Graham: http://shawngraham.github.io/open-notebook/l
 One way to get GitHub data: 
 http://ghtorrent.org/
 
+[I learned about GHTorrent from Bogdan Vasilescu et al's work, e.g. Gender and Tenure Diversity in GitHub Teams; 11/25/15]
+
 "GHTorrent monitors the Github public event time line. For each event, it retrieves its contents and their dependencies, exhaustively. It then stores the raw JSON responses to a MongoDB database, while also extracting their structure in a MySQL database.
 
 GHTorrent works in a distributed manner. A RabbitMQ message queue sits between the event mirroring and data retrieval phases, so that both can be run on a cluster of machines.
