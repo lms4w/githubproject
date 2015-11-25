@@ -91,6 +91,10 @@ and maybe this:
 
 http://www.hacheka.com/newbie-guide-for-using-github-in-mac-osx/ (although this one is from 4 years ago and may be out of date)
 
+So I have this more or less figured out (although I'm not yet ready to teach others how to use GitHub--that will come later):
+
+In GitHub Desktop, commit changes, describe them, then sync. Seems pretty straightforward. 
+
 
 
 
