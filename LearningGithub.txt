@@ -1,0 +1,96 @@
+Learning GitHub
+
+I'm working my way through the initial GitHub tutorials. Here are points of confusion:
+
+* What is the relationship between the local and the networked GitHubs? Do I have any control over where the repos go locally? 
+
+* How do I change the names of repos?
+
+* How do a create folders for separate parts of a project? Clearly you can, as I see others have, but it doesn't just seem to be a matter of the networked file system copying the local.
+
+
+
+A point of confusion: If GitHub works best with plain text, does that mean that I can't keep my list of DH-GH URLs in Excel, which is the easiest right now? Should I save the Excel as CSV? 
+
+GitHub profiles Open Data projects, mostly in government, suggest that you can use a variety of formats for data:
+
+* https://github.com/OpenExoplanetCatalogue/open_exoplanet_catalogue/tree/master/systems uses XML
+
+* https://github.com/unitedstates/congress-legislators uses YAML
+>> "YAML is a human friendly data serialization standard for all programming languages." http://yaml.org/
+
+It looks verbose, markupy without the angle brackets...
+
+* https://github.com/benbalter/congressional-districts
+Geo JSON
+
+* https://github.com/GSA/data/blob/gh-pages/dotgov-domains/2015-03-15-full.csv
+CSV
+
+
+* https://github.com/Chicago/food-inspections-evaluation/tree/master/DATA
+RDS = SQL Server data  file, I think
+
+* https://github.com/department-of-veterans-affairs/gi-bill-comparison-tool
+csv data
+
+http://www.r-bloggers.com/data-on-github-the-easy-way-to-make-your-data-available/
+recommends csv:
+
+"Create a Data folder in the repository and save your data in it using some text format. I prefer .csv. You can upload other types of files to GitHub, but if you save it in a text-based format others can directly suggest changes and you can more easily track changes."
+
+LEARNING PATH
+
+I went through the basic tutorial when I installed the GitHub client.
+
+I also did the quickie 5 step online tutorial.
+
+Now I'm doing the more in-depth, interactive https://try.github.io/
+
+Completed. (Although I often skipped the helpful explanation box in the bottom right, first out of ignorance and then laziness. Hope that doesn't bite me.)
+
+It seems that I will need to learn a lot of commandline stuff. Nothing hard, but I'll need a cheat sheet, at least for a while.
+
+I'm confused by what exactly checkout means, as well as staging.
+
+It's kind of sinking in that most stuff happens first locally and is then pushed to the server. 
+
+
+--> More
+
+"We only scratched the surface of Git in this course. There is so much more you can do with it. Check out the Git documentation for a full list of functions.
+
+The Pro Git book, by Scott Chacon, is an excellent resource to teach you the inner workings of Git.
+
+help.github and GitHub Training are also great for anything related to Git in general and using Git with GitHub."
+
+I can go here next; not clear if there is a fee:
+http://gitreal.codeschool.com/?utm_source=github&utm_medium=codeschool_option&utm_campaign=trygit
+
+
+COMMANDS
+
+* rm
+Removing one file is great and all, but what if you want to remove an entire folder? You can use the recursive option on git rm:
+
+git rm -r folder_of_cats
+
+This will recursively remove all folders and files from the given directory.
+
+NOVEMBER 25, 2015
+
+* I'm trying to set up GitHub desktop. I have this minor (and irrational) fear of accidentally sharing private files with the world, so I want to set this up properly.
+
+This resource seems especially useful:
+
+https://help.github.com/desktop/guides/getting-started/
+
+-->Actually, I already did this stuff.
+
+and maybe this:
+
+http://www.hacheka.com/newbie-guide-for-using-github-in-mac-osx/ (although this one is from 4 years ago and may be out of date)
+
+
+
+

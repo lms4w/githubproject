@@ -1,0 +1,21 @@
+Categories of DH GitHub Projects
+
+Initial List from Karthik Ram, http://www.scfbm.org/content/8/1/7 [he focuses on Git more broadly, and he is interested in science rather than humanities]
+
+>>How Git can track various artifacts of a research effort
+
+Manuscripts and notes
+Datasets
+Statistical code and figures
+Complete manuscripts
+
+>>Use Cases
+
+* Lab notebook
+* Facilitating collaboration
+* Backup and failsafe against data loss
+* Freedom to explore new ideas and methods
+* Mechanism to solicit feedback and reviews
+* Increase transparency and verifiability
+* Managing large data
+* Lowering barriers to reuse

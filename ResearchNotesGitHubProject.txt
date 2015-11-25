@@ -1,0 +1,333 @@
+Research Notes for GitHub DH Project
+
+October 30, 2015
+I'm trying to capture links for DH people and organizations on GitHub. I can discover even more people, organizations and projects by looking at who these people follow and who follows them. But what criteria do I use to determine if someone qualifies as a "digital humanist"? Whether I recognize their name is a faulty and biased measure. Looking at a list of projects they've worked on is fuzzy, since DH folks can work on projects that may not be very humanistic in nature. 
+
+To get a better understanding of methods, I plan to look at the literature on analyzing collaborative science.
+
+I need to develop scripts to scrape GitHub for this information--or to use the GitHub API.
+
+What information do I need to get? Name, URL, GitHub stats.
+
+Right now I have two broad areas of interest: 
+
+1. How do we evaluate software platforms like GitHub?
+2. What can platforms like GitHub tell us about how project development in DH works?
+
+There are 148 repository results searching for digital humanities in GitHub. I'm on page 7 of the results page. Some of the project pages are quite short--perhaps a readme file and little else. Others are much more substantial.
+
+Of course, not everyone uses the term "digital humanities" in describing their work, so I will need to be clever in finding DH on GitHub. And I won't even pretend to be comprehensive. 
+
+I could look at some listing of digital humanists to determine whether they have GitHub repositories.
+
+I seem to be finding more male DH folks in GitHub than women. Is that necessarily true, and if so, what are the implications?
+
+I can also see how many DH centers have a presence in GitHub. Is it used around the world?
+
+I can also look for major software projects on GitHub (but that would overlook smaller projects).
+
+And mine DH publications for references to GitHub.
+
+How does DH usage of GitHub compare to other services, like BitBucket?  --> GitHub is preferred because of its wide user base.
+
+This search yields lots of stuff on github: https://www.google.ca/search?hl=en&q=github+humanities
+
+Search recommended by Shawn Graham: http://shawngraham.github.io/open-notebook/ll_CC/#!pages/uploads/blogarchive/posts/20130606-github-comshawngraham.md
+
+
+**
+
+One way to get GitHub data: 
+http://ghtorrent.org/
+
+"GHTorrent monitors the Github public event time line. For each event, it retrieves its contents and their dependencies, exhaustively. It then stores the raw JSON responses to a MongoDB database, while also extracting their structure in a MySQL database.
+
+GHTorrent works in a distributed manner. A RabbitMQ message queue sits between the event mirroring and data retrieval phases, so that both can be run on a cluster of machines.
+
+Every two months, the project releases the data collected during that period as downloadable archives, also shared with the Bittorent protocol."
+
+Several projects have used GHTorrent to study collaboration among codes: http://ghtorrent.org/halloffame.html
+
+Are there ethical considerations in working with publicly available data like this?  I could report out at a high level.
+
+Presumably there aren't IP restrictions on the data, since it's public and available through an API.
+
+Alternatively, I could try out web scraping, since I'm collecting a list of DH URLs. 
+
+GitHub offers a lot of detailed data about users and projects, allowing you to trace their social connections, see how frequently they commit code, etc.
+
+Of course, to do this work I will need to develop skills in both capturing data and analyzing it in a statistically valid way--or find a collaborator.
+
+**
+FOCUS
+The project as I'm conceiving it right now is too big. I'm interested both in how researchers are using GitHub and what principles we can establish for evaluating platforms of knowledge. The second question seems to require less technical know-how. 
+
+October 31, 2015
+
+Methodological questions:
+
+* How do I keep a lab notebook for a humanities project? I'd like to understand the conventions used in the sciences. I imagine that I'd record research questions, experiments (including protocols and results), background research, and problems encountered.
+
+* I'd like to make this project as transparent as possible, including the interviews. I want the people I interview to get credit for their insightful remarks, but I don't want to embarrass them or limit their willingness to share. Perhaps some of the interviews can be off the record.
+
+* In 2012, Mark Sample suggested that GitHub was exciting interest in the DH community, but that the learning curve and the fact that it is a for-profit platform would limit adoption. He also pointed to a key feature that was generating much of this interest: the ability to share easily. While it seems that developers are willing to work through the technical issues and set aside worries about corporate ownership, I think he's right about the value of sharing.
+
+* Based on an initial observation, it seems that there is more adoption of GitHub in the US and Canada than elsewhere in the world. While most of the major DH centers in the US (Stanford, Maryland, Nebraska, Virgina, et al) have GitHub repos, I didn't notice that as much in searching for, say, RedHD, Kings' College, Research Center for DH in Taiwan, et al. Cologne's DH center has a repo, but it's private. However, it could be that my own monoligualism means I'm just not aware of materials not in English-- or it could be that people around the world are leery of signing up with a US company.  I do know that Chinese coders are using it to share code for circumventing blocks on internet access in China--hence a recent DNS attack. But I probably should narrow my scope to repositories in English. 
+
+* To what extent can text analysis & text mining tools expose the work being done in DH?  It would probably be necessary to differentiate types of projects-- code being very different from books, for example. 
+
+Skills I need to learn:
+
+* GitHub. As a GitHub novice, I will keep a journal of my attempts to learn how to use GitHub. Here's hoping that not really knowing what I am doing will be a good thing, as I can document what it takes to learn.
+
+* the GitHub API? in order to get access to data
+
+* web scraping tools? in order to get access to data
+
+* statistical tools like R, to analyze the data
+
+* Markdown, to format texts
+
+* SQL, for examining datasets
+
+NOVEMBER 6
+
+Just noticed that the following files (47) from the NEH download of DMPs have "GitHub" in them. This observation suggests the somewhat obvious hypothesis that Github is widely used in the DH community. So then the question is: Why? And is it really the best choice for data management?
+
+HD-51506-12.pdf
+HD-51509-12.pdf
+HD-51513-12.pdf
+HD-51560-12.pdf
+HD-51573-12.pdf
+HD-51618-12.pdf
+HD-51636-13.pdf
+HD-51674-13.pdf
+HD-51705-13.pdf
+HD-51753-13.pdf
+HD-51772-13.pdf
+HD-51773-13.pdf
+HD-51787-13.pdf
+HD-51791-13.pdf
+HD-51836-14.pdf
+HD-51863-14.pdf
+HD-51864-14.pdf
+HD-51895-14.pdf
+HD-51897-14.pdf
+HD-51907-14.pdf
+HD-51912-14.pdf
+HD-51918-14.pdf
+HD-51921-14.pdf
+HD-51944-14.pdf
+HD-51957-14.pdf
+HD-228732-15.pdf
+HD-228942-15.pdf
+HD-228949-15.pdf
+HD-228966-15.pdf
+HD-228971-15.pdf
+HD-229031-15.pdf
+HD-229071-15.pdf
+HG-50050-13.pdf
+HJ-50173-14.pdf
+HJ-50178-14.pdf
+HK-50015-12.pdf
+HK-50072-13.pdf
+HK-50087-13.pdf
+HK-50120-13.pdf
+HK-50128-13.pdf
+HK-50155-14.pdf
+HK-50161-14.pdf
+HK-50164-14.pdf
+HK-50173-14.pdf
+HK-50175-14.pdf
+HK-50176-14.pdf
+HK-50181-14.pdf
+
+**
+
+November 7, 2015
+
+RESEARCH QUESTIONS
+
+Who do DH folks follow? Who follows them? To what extent are followers/ followed in the DH community? How much crossover is there with other disciplines or with the larger open source community?
+
+TECHNOLOGY
+
+In order to install GitHub's Mac client, I first need to upgrade my OS.  Hope all goes well.
+
+And it looks like it did....
+
+
+DH ON GITHUB
+
+I'm not sure if I should focus on users, projects or both.  Some projects may not necessarily be "digital humanities," but then some users may do one DH project but otherwise work in other domains. And of course these discussions open up the thorny question: what exactly is/are DH, anyway?
+
+I'm also not sure whether I just need URLs, so that I have a list of data to retrieve, or if I should manually capture information such as name of user or project. I'm hoping that I'll be able to fetch the URLs using wget and extract needed information using Beautiful Soup. [So I'm changing course and just grabbing URLs in order to save time--11/25/15]
+
+Here is a potential method to grab URLs: "You can then star projects that you find interesting and want to come back to later—just visit your stars page to see all your starred projects." (https://help.github.com/articles/be-social/)
+
+Here's what the HTML looks like:
+<h3 class="repo-list-name">
+      <a href="/castiron/didh">
+        <span class="prefix">castiron</span>
+        <span class="slash">/</span>
+        didh
+</a>    </h3>
+
+      <p class="repo-list-description">
+        Debates in the Digital Humanities
+      </p>
+
+This method gets me the project URL (truncated), the username and the title of the repo. 
+
+  <ul class="repo-list js-navigation-container js-active-navigation-container" id="js-repo-list">
+              <li class="repo-list-item public source">
+    <div class="repo-list-stats">
+      
+  <div class="js-toggler-container js-social-container starring-container on">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/castiron/didh/unstar" class="js-toggler-form starred js-unstar-button" data-form-nonce="7629a4e3964e5b079f54d7a86ebf5f77e52e538a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wIAES4N4kV2hKGlJHPniWonIngTZZ2GBfyoiENGmwXGTtLpXh9qMvVQDxlPU3M+Nc8u8gz9AUR5tT9QtoP/mhg==" /></div>
+      <button
+        class="btn btn-sm  js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar castiron/didh"
+        data-ga-click="Repository, click unstar button, action:stars#index; text:Unstar">
+        <span class="octicon octicon-star"></span>
+        Unstar
+      </button>
+</form>
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/castiron/didh/star" class="js-toggler-form unstarred js-star-button" data-form-nonce="7629a4e3964e5b079f54d7a86ebf5f77e52e538a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="FTWUlaPdA7OHibQ0QtyjiawObuLOpV26koItYW1vLuu8ab8JAwUdLYUuq/GMAFekBgUJUh/giD3r9J4fo60Akw==" /></div>
+      <button
+        class="btn btn-sm  js-toggler-target"
+        aria-label="Star this repository" title="Star castiron/didh"
+        data-ga-click="Repository, click star button, action:stars#index; text:Star">
+        <span class="octicon octicon-star"></span>
+        Star
+      </button>
+</form>  </div>
+
+    </div>
+
+    <h3 class="repo-list-name">
+      <a href="/castiron/didh">
+        <span class="prefix">castiron</span>
+        <span class="slash">/</span>
+        didh
+</a>    </h3>
+
+      <p class="repo-list-description">
+        Debates in the Digital Humanities
+      </p>
+
+    <p class="repo-list-meta">
+      Starred <time datetime="2015-11-07T21:30:50Z" is="relative-time">Nov 7, 2015</time>
+    </p>
+  </li>
+  <li class="repo-list-item public source">
+    <div class="repo-list-stats">
+      
+  <div class="js-toggler-container js-social-container starring-container on">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/curateteaching/digitalpedagogy/unstar" class="js-toggler-form starred js-unstar-button" data-form-nonce="7629a4e3964e5b079f54d7a86ebf5f77e52e538a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="zz9lY4nBLMS6KUvNXpgeGSB0S13uNi0y87aaXtboE8oSI94IznMc4ciG6rAKDbcjOO/8XJEM/pliGgr873LqqQ==" /></div>
+      <button
+        class="btn btn-sm  js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar curateteaching/digitalpedagogy"
+        data-ga-click="Repository, click unstar button, action:stars#index; text:Unstar">
+        <span class="octicon octicon-star"></span>
+        Unstar
+      </button>
+</form>
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/curateteaching/digitalpedagogy/star" class="js-toggler-form unstarred js-star-button" data-form-nonce="7629a4e3964e5b079f54d7a86ebf5f77e52e538a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="kfMpQgpCGbTTdkhQBPlWX32+jfSETBsCumeC8dvMKoyrLgO71cTJgnT8EkWIUDKu730dMR0Ki2JdLSVjgObBAA==" /></div>
+      <button
+        class="btn btn-sm  js-toggler-target"
+        aria-label="Star this repository" title="Star curateteaching/digitalpedagogy"
+        data-ga-click="Repository, click star button, action:stars#index; text:Star">
+        <span class="octicon octicon-star"></span>
+        Star
+      </button>
+</form>  </div>
+
+    </div>
+
+    <h3 class="repo-list-name">
+      <a href="/curateteaching/digitalpedagogy">
+        <span class="prefix">curateteaching</span>
+        <span class="slash">/</span>
+        digitalpedagogy
+</a>    </h3>
+
+      <p class="repo-list-description">
+        Digital Pedagogy in the Humanities: Concepts, Models, and Experiments
+      </p>
+
+    <p class="repo-list-meta">
+      Starred <time datetime="2015-11-07T21:30:43Z" is="relative-time">Nov 7, 2015</time>
+    </p>
+  </li>
+
+          </ul>
+
+So here are a few concerns about doing that:
+
+* Would it mess up the starring in DH?
+* Would it creep people out that I'm investigating their repos? However, it's probably better that I'm transparent about it. Also, I could be bringing positive attention to their work. Others could use my stars to track DH projects, although the list will become outdated soon. 
+* If I update the list, I would have to compare my spreadsheet of DH repos to the starred list. 
+
+This could be a quick and easy way to capture DH projects, so I wouldn't have to mess with copy and paste.  
+
+Likewise, I can use Follow to keep up with users, although presumably the project info also gets me the necessary user info:
+
+<li class="follow-list-item">
+  <a href="/wcaleb"><img alt="@wcaleb" class="gravatar" height="96" src="https://avatars3.githubusercontent.com/u/1126864?v=3&amp;s=192" width="96" /></a>
+  <div class="follow-list-container">
+    <h3 class="follow-list-name"><span class="css-truncate css-truncate-target" title="W. Caleb McDaniel"><a href="/wcaleb">W. Caleb McDaniel</a></span></h3>
+    <p class="follow-list-info"><span class="octicon octicon-organization"></span> <span class="css-truncate css-truncate-target" title="Works for Rice University">Rice University</span></p>
+...
+</li>
+
+
+
+MY RESEARCH PROCESS
+
+According to Larson, one reason that humanists may resist GitHub is their reluctance to be fully transparent out of fear that they might be scooped or look stupid. I'm not so concerned about being scooped--fine, take my data and use my methods; replication is to my benefit-- as about looking foolish: "Wow, she sure does seem confused a lot." But I'm viewing this as a learning project, an opportunity for me to figure out tools (GitHub, R, wget, Beautiful Soup) and methods (keeping a lab notebook, statistical analysis, digital ethnography) as I pursue research questions that interest me.  So I'm not a fool but a learner--albeit an often distracted one who tends to chase after shiny things and to circle around the same topic.
+
+TRANSPARENCY
+
+In order to be transparent about my own research project, perhaps I should announce the project on my blog--that also makes me accountable to make continued progress. I can advise folks what I am doing and give them the option to opt out of having their repos included. In general, I'll report out at a high level, but I may want to give specific examples of how different repos are handling, say, data or writing.
+
+Alternatively, I can just handle this on my own GitHub page. I can star a bunch of projects, which can then be accessible to others. I can then scrape my own favorites page to get links to projects and users.
+
+NOVEMEBER 10, 2015
+
+Struck by Ben Schmidt's comments on "Writing up text analysis for immediate interaction and long-term persistence," http://bookworm.benschmidt.org/posts/2015-03-24-new-formats.html
+
+He brings up a few important issues: reproducibility in DH work, transparency and sustainability.
+
+"I want to start thinking about how to reconcile two somewhat distinct traditions in Digital Humanities text-oriented projects.1 One is computationally inclined, shies in the direction of writing articles, performs sometimes elaborate computations, and views reproducible research (where possible) as a matter of sharing code on Github.2 The other is more interested in presenting individual artifacts through robust platforms like Omeka for images or resilient sites for displaying TEI archives.3 The latter rarely tries to make broader arguments about its aggregate sources; the former rarely makes its underlying texts accessible except as a few examples in its text, relying instead largely on flat charts from R or python.4"
+
+and sustainability includes:
+
+"Capable of persisting for decades even off the original server with its data backend, through locally cached copies on places like the Internet Archive and Github."
+
+"Digital Humanists sometimes take to mean “reproducible research” as putting code on GitHub. That’s great and important; but it’s also a huge barrier to pass, and often an unnecessary one. You can learn a lot about a source by exposing different elements for research interactively, and that means that domain experts who will never in a million years run our LAMP-stack architecture can just put some queries in and see what the results are; they can also click through to the texts to see if the words mean the things I say they do."
+
+Comment from Ted Underwood about limitations of GitHub: "As you suggest, sharing code (or even data) on github is not really opening things up very far."
+
+NOVEMBER 11, 2015
+
+Open Science Framework seems to draw some key concepts from GitHub, such as displaying recent activity (changes) and allowing forks. It is run by the Center for Open Science, which is sponsored by foundations such as the Arnold Foundation and, in kind, through GitHhub. OSF is itself on GitHub https://github.com/CenterForOpenScience/osf.io. In fact, it looks like its website is hosted by GitHub.
+
+See this comment: https://groups.google.com/forum/#!topic/openscienceframework/uabhtYgtMgU
+"Brian Nosek 	
+1/17/14
+Github is excellent.  We use it extensively at COS (https://github.com/CenterForOpenScience).  
+
+Considering the relevant overlapping features between Github and OSF, Github does them far better and with more user control.  OSF is deliberately simplified on those aspects of the interface.  Also, the purpose of pursuing the Github add-on is to expose its great features to OSF users.  [As you point out, there is more that can be done to enrich this in the future.]
+
+The OSF model is to connect services so that the user has maximum flexibility to organize their workflow with the tools and services best suited to their needs.  For example, some of the next add-on releases will be data repositories like Amazon S3 and Dataverse (we've been talking to Databrary about this too).  So, in your OSF project, you could add a component of whichever repository fits best for your data needs, and then link that data to other services that get incorporated (e.g., analytic and visualization tools).
+
+Finally, OSF will be an open infrastructure so that add-ons and services can be linked together by the community as there is interest and expertise available to get it done.  
+
+In short, I don't see OSF as a replacement for other tools, but a means of helping users put those tools together to advance their research progress.
+
+Brian"
+
+https://osf.io/ct89g/
