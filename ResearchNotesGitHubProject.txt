@@ -331,3 +331,8 @@ In short, I don't see OSF as a replacement for other tools, but a means of helpi
 Brian"
 
 https://osf.io/ct89g/
+
+**
+November 25, 2015
+
+* Made research notes public on GitHub. I'm skeptical that these notes will be very useful to others, except in reflecting the process of muddling through research problems. I'm inspired, though, by the example of my Rice colleague Caleb McDaniel and others. I'm also interested in experimenting with research transparency.
