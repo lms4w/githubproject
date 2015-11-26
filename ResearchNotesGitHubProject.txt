@@ -338,3 +338,12 @@ https://osf.io/ct89g/
 November 25, 2015
 
 * Made research notes public on GitHub. I'm skeptical that these notes will be very useful to others, except in reflecting the process of muddling through research problems. I'm inspired, though, by the example of my Rice colleague Caleb McDaniel and others. I'm also interested in experimenting with research transparency.
+
+**
+November 26, 2015
+
+I'm exploring how GitHub is used in NEH data management plans between 2012 and 2015. NEH ODH made available 108 DMPs via FOIA. See http://www.neh.gov/divisions/odh/grant-news/data-management-plans-successful-grant-applications-2011-2014-now-available and http://www.neh.gov/about/foia/library
+
+I loaded these into Voyant and found 105 instances of GitHub (multiple instances in some files). I've created a concordance called GitHubinNEHDMPCorpus. In looking at files from 2012, it seems that some say they "may" use GitHub; such non-commital language is typical of grants.  
+
+
