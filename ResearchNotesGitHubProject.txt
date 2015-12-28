@@ -346,4 +346,30 @@ I'm exploring how GitHub is used in NEH data management plans between 2012 and 2
 
 I loaded these into Voyant and found 105 instances of GitHub (multiple instances in some files). I've created a concordance called GitHubinNEHDMPCorpus. In looking at files from 2012, it seems that some say they "may" use GitHub; such non-commital language is typical of grants.  
 
+#December 28, 2015
+
+Some (but not all) of my questions:
+
+1. What is the history of version control? 
+A colleague suggested that version control in the (open source?) software development world is tied with Linux--whatever Linux adopts as its version control system tends to be more widely adopted. Before Git there was Subversion, for example. Which raises the question: what's next, and what's the migration path? 
+
+In a broader sense, I'm interested in the history of version control for knowledge management. Through textual studies, for example, we can trace the evolution of manuscripts and printed texts in multiple drafts. Version control systems like GitHub make it relatively easy to see the changes that texts undergo--no Hinman Collator required. What difference does that make? With Wikipedia, for example, you can trace the contested, evolving nature of knowledge.
+
+2. What is humanistic about my study of how digital humanists are using GitHub? 
+Well, I am looking at humanities knowledge production and hoping to generate recommendations for the humanities community, but in some ways this study is more tied to social science and information science than traditional humanities. Ultimately it is interdisciplinary. I hope to draw upon software studies as I analyze GitHub. 
+
+3. What methods should I use in conducting the study? What's the rough workplan?
+ * Document the project's goals and methods.
+ * Submit the IRB paperwork.
+ * Identify DH projects and people on GitHub. 
+ * Read and synthesize the many articles on GitHub I have gathered in my Zotero collection. Topics include collaboration on GitHub, GitHub as a component of the software development ecosystem, methods for mining GitHub, diversity in Github, etc.
+ * Conduct a close reading of the pages for a few GitHub users and repositories to understand the information that is available and the specific research questions I want to ask.
+ * Using wget, the GitHub API, GHTorrent or another method to download DH user and/or repository pages. I'll need to retrieve these pages on the same day for consistency of data and aim for a representative sample, as comprehensiveness will be difficult to achieve. I'm hoping to have a collaborator to work with me on the technical aspects of the project.
+ * Using Beautiful Soup or another method, scrape relevant data from web pages into CSV or database.
+ * Look for patterns in data, e.g. length of time on GitHub, number of followers, number followed, number of public contributions, repositories, number of branches and commits, etc. 
+ * Conduct interviews with DH GitHub users about how they use GitHub, challenges and concerns, and advantages. Aim to make transcripts openly available (with interviewee permission) so that interviewees get credit for their ideas.
+ * Perhaps develop a survey to gather more broad-based information about GitHub usage.
+ * Analyze interview data using qualitative methods.
+ * Blog challenges and insights along the way.
+ * Develop a set of recommendations for evaluating DH platforms, as well as an analysis of how GitHub is being used in the DH community.
 
