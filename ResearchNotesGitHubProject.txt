@@ -297,7 +297,7 @@ In order to be transparent about my own research project, perhaps I should annou
 
 Alternatively, I can just handle this on my own GitHub page. I can star a bunch of projects, which can then be accessible to others. I can then scrape my own favorites page to get links to projects and users.
 
-NOVEMEBER 10, 2015
+#NOVEMEBER 10, 2015
 
 Struck by Ben Schmidt's comments on "Writing up text analysis for immediate interaction and long-term persistence," http://bookworm.benschmidt.org/posts/2015-03-24-new-formats.html
 
@@ -340,7 +340,7 @@ November 25, 2015
 * Made research notes public on GitHub. I'm skeptical that these notes will be very useful to others, except in reflecting the process of muddling through research problems. I'm inspired, though, by the example of my Rice colleague Caleb McDaniel and others. I'm also interested in experimenting with research transparency.
 
 **
-November 26, 2015
+#November 26, 2015
 
 I'm exploring how GitHub is used in NEH data management plans between 2012 and 2015. NEH ODH made available 108 DMPs via FOIA. See http://www.neh.gov/divisions/odh/grant-news/data-management-plans-successful-grant-applications-2011-2014-now-available and http://www.neh.gov/about/foia/library
 
@@ -373,3 +373,17 @@ Well, I am looking at humanities knowledge production and hoping to generate rec
  * Blog challenges and insights along the way.
  * Develop a set of recommendations for evaluating DH platforms, as well as an analysis of how GitHub is being used in the DH community.
 
+# December 30, 2015
+
+I've been experimenting with the GitHub API to download metadata about repositories related to "humanities" and have met with paertial success:
+* I used this API query: https://api.github.com/search/repositories?q=humanities
+This apparently searches for "humanities" in the "name, the description, or the README" (https://developer.github.com/v3/search/). 
+* This yielded a JSON file with the first 30 out of 327 results. I've called this GH-api-SearchHumanities2015-12-30.txt and saved it on my local computer, as I don't want to put partial data into my GitHub repository. Apparently I've been limited to 30 results per minute by the GitHub API. According to https://developer.github.com/v3/search/ : "The Search API has a custom rate limit. For requests using Basic Authentication, OAuth, or client ID and secret, you can make up to 30 requests per minute."
+
+* I converted the JSON file to CSV using https://json-csv.com/, which seemed to work well; it's called GH-api-SearchHumanities2015-12-30.csv. Fields include item (repo) name; owner URL; URLs for followers, subscriptions, collaborations, etc; item description (not all repos provide this); creation and updated date; items size; counts for stargazers, watchers, forks, issues; and "score" (whatever that is).  I need to determine what's important to my analysis: counts? who follows whom? 
+
+* The next task is to figure out how to retrieve all 327 results; read the search documentation at https://developer.github.com/v3/search/
+
+* I'll need to keep in mind that not everything that includes "humanities" in its metadata necessarily fits my project scope. For example, I'm not sure that this qualifies: "a school assessment that is an attempt to satirise humanities screwed up developments and focuses." At the same time, not all DH folks include "humanities" in their user or repo metadata, so I will want to go beyond keyword search.  A partially manual method where I collect URLs or favorite qualifying users & repos (and then capture their metadata) may turn out to be more effective, as selecting DH repos & users is an important part of the research project.
+
+* Other potential approaches include using GHTorrent (most recent database dump from 9/2015; http://ghtorrent.org/downloads.html) or GitHub archive. However, I'm just interested in a small subset of what's available in GHTorrent. See Gousios, Georgios. “The GHTorent Dataset and Tool Suite.” In Proceedings of the 10th Working Conference on Mining Software Repositories, 233–36. IEEE Press, 2013. http://dl.acm.org/citation.cfm?id=2487132.
