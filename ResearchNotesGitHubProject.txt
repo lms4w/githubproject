@@ -387,3 +387,21 @@ This apparently searches for "humanities" in the "name, the description, or the 
 * I'll need to keep in mind that not everything that includes "humanities" in its metadata necessarily fits my project scope. For example, I'm not sure that this qualifies: "a school assessment that is an attempt to satirise humanities screwed up developments and focuses." At the same time, not all DH folks include "humanities" in their user or repo metadata, so I will want to go beyond keyword search.  A partially manual method where I collect URLs or favorite qualifying users & repos (and then capture their metadata) may turn out to be more effective, as selecting DH repos & users is an important part of the research project.
 
 * Other potential approaches include using GHTorrent (most recent database dump from 9/2015; http://ghtorrent.org/downloads.html) or GitHub archive. However, I'm just interested in a small subset of what's available in GHTorrent. See Gousios, Georgios. “The GHTorent Dataset and Tool Suite.” In Proceedings of the 10th Working Conference on Mining Software Repositories, 233–36. IEEE Press, 2013. http://dl.acm.org/citation.cfm?id=2487132.
+
+# December 31, 2015
+
+I figured out how to retrieve multiple pages of results through the GitHub API using pagination (https://developer.github.com/guides/traversing-with-pagination/) and curl, "a command line tool and library for transferring data with URL syntax" (http://www.codingpedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/). In the terminal, I entered:
+
+`curl 'https://api.github.com/search/repositories?q=humanities&page=2' > GHDH-2.txt`
+
+And so on for each of the the 11 pages of results (327 total results).
+
+Then I concatenated the results as follows:
+`cat GHDH-1.txt GHDH-2.txt GHDH-3.txt GHDH-4.txt GHDH-5.txt GHDH-6.txt GHDH-7.txt GHDH-8.txt GHDH-9.txt GHDH-10.txt GHDH-11.txt > GHDH-all-2015-12-31.txt`
+
+The last result matches with the last result in the GitHub search.
+
+I then converted JSON to Excel using Open Refine, following the instructions here: http://onlinejournalismblog.com/2015/10/21/how-to-convert-xml-or-json-into-spreadsheets-using-open-refine/
+
+I was surprised by how easy it was. 
+
