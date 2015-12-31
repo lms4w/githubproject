@@ -405,3 +405,7 @@ I then converted JSON to Excel using Open Refine, following the instructions her
 
 I was surprised by how easy it was. 
 
+Presumably I can share the data, as it is publicly accessible. 
+
+My next steps are to try to understand the data, both by examining how other researchers have analyzed similar datasets and by running my own analysis, perhaps using OpenRefine (can it do analysis?) or a statistics package. For instance, how many projects are in Python? What is the average number of commits? Here is where I'm wishing for a background in statistics so that I know how to conduct such analysis and what pitfalls to avoid. Yet another skill/ area of knowledge to work on...
+
