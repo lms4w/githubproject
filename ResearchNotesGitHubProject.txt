@@ -409,3 +409,47 @@ Presumably I can share the data, as it is publicly accessible.
 
 My next steps are to try to understand the data, both by examining how other researchers have analyzed similar datasets and by running my own analysis, perhaps using OpenRefine (can it do analysis?) or a statistics package. For instance, how many projects are in Python? What is the average number of commits? Here is where I'm wishing for a background in statistics so that I know how to conduct such analysis and what pitfalls to avoid. Yet another skill/ area of knowledge to work on...
 
+# January 1, 2016
+
+I was curious about whether "humanities" appears in descriptions and titles for users as well as for repositories. It turns out that it does, although less frequently: 46 occurrences. So I used the search API to retrieve these results:
+
+curl 'https://api.github.com/search/users?q=humanities&page=2' > GHHumainUsers-2.txt
+
+and once again converted JSON to CSV. I initially screwed this up and created a spreadsheet with more than 46 occurrences, but I corrected the problems in redoing the operations.
+
+Searching users retrieves both users and organizations. Curiously, some of the rows don't appear to contain "humanities," although they qualify as DH users. For example:
+
+https://github.com/dhcolumbia
+
+The data is part of the description, but for some reason my search API call for users is only retrieving 17 fields as opposed to 83 with repositories-- and description is not included in what I retrieve, even though it's evidently being searched.
+
+The documentation at https://developer.github.com/v3/search/#search-users suggests that you only get these fields:
+
+"login": "mojombo",
+      "id": 1,
+      "avatar_url": "https://secure.gravatar.com/avatar/25c7c18223fb42a4c6ae1c8db6f50f9b?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mojombo",
+      "html_url": "https://github.com/mojombo",
+      "followers_url": "https://api.github.com/users/mojombo/followers",
+      "subscriptions_url": "https://api.github.com/users/mojombo/subscriptions",
+      "organizations_url": "https://api.github.com/users/mojombo/orgs",
+      "repos_url": "https://api.github.com/users/mojombo/repos",
+      "received_events_url": "https://api.github.com/users/mojombo/received_events",
+      "type": "User",
+      "score": 105.47857
+but I'm also retrieving
+following_url
+gists_url
+starred_url
+events_url
+site_admin
+
+So how do I get other stuff, like bio and email? This page suggests it's possible: https://developer.github.com/v3/users/ 
+GET /users/:username
+
+But I'm not sure how to combine the get command with search (or how to even execute that command), so that I can retrieve all users that have humanities within their profile.
+
+One of the challenges of my project will be figuring out what users and repositories to focus on. I've hand compiled a list of 34 repositories and 84 users, based upon what I've searched for and stumbled across. Looking for "humanities" certainly won't get me all of them, nor will looking for "dh." I could search for GitHub accounts for every center included in centerNet, but that would be fairly labor intensive and would be too center-centric, so to speak. However, I could also look for all users associated with a center.  I could search for GitHub accounts for everyone who has presented at the last two DH conferences (I'd include 2014, since some key folks didn't present at 2015), but that would be both labor intensive and limited. I could use my existing data as a seed and look for followers and followed, although that might limit me to only certain communities (e.g. just in the US) and cast the net too widely (e.g. non-DH developers who just happen to be followed). Of course, searching for "humanities" probably means that non-English speakers are excluded. Or I could just decide that this is a pilot project and my intent is too figure out how to evaluate GitHub as a humanities platform and how the community is using GitHub, not to create a comprehensive list of all DH users and repositories on GitHub.  So that I set a manageable scope, I can limit my analysis and be transparent about what's not included. 
+
+
