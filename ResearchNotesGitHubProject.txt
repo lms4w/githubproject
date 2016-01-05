@@ -452,4 +452,9 @@ But I'm not sure how to combine the get command with search (or how to even exec
 
 One of the challenges of my project will be figuring out what users and repositories to focus on. I've hand compiled a list of 34 repositories and 84 users, based upon what I've searched for and stumbled across. Looking for "humanities" certainly won't get me all of them, nor will looking for "dh." I could search for GitHub accounts for every center included in centerNet, but that would be fairly labor intensive and would be too center-centric, so to speak. However, I could also look for all users associated with a center.  I could search for GitHub accounts for everyone who has presented at the last two DH conferences (I'd include 2014, since some key folks didn't present at 2015), but that would be both labor intensive and limited. I could use my existing data as a seed and look for followers and followed, although that might limit me to only certain communities (e.g. just in the US) and cast the net too widely (e.g. non-DH developers who just happen to be followed). Of course, searching for "humanities" probably means that non-English speakers are excluded. Or I could just decide that this is a pilot project and my intent is too figure out how to evaluate GitHub as a humanities platform and how the community is using GitHub, not to create a comprehensive list of all DH users and repositories on GitHub.  So that I set a manageable scope, I can limit my analysis and be transparent about what's not included. 
 
+# January 5, 2016
+
+
+Sean Smith raised some great questions about how GitHub data can be used to analyze the extent to which public GitHub projects are re-used-- or are people making things public in the hopes that they will be reused. What are the expectations vs the reality of making projects open source?
+
 
