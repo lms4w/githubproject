@@ -460,4 +460,4 @@ Sean Smith raised some great questions about how GitHub data can be used to anal
 
 ##29 January 2016##
 
-After talking with Nate Matias about the ethical implications of my project, I decided to take down my lists of DH users and repositories on GitHub in order to protect their privacy.  These lists were based on GitHub searches of public repositories, so there was nothing confidential, but people could wish to not shine a light on their GitHub work.
+After talking with Nate Matias about the design and ethical implications of my project, I decided to take down my lists of DH users and repositories on GitHub in order to protect their privacy.  These lists were based on searches of public GitHub  repositories, so there was nothing confidential, but people could wish to not have a light shone on their GitHub work, which I want to respect. I'm also persuaded that it makes sense to wait until data collection and cleaning are complete before sharing data, as complexities may arise during the research process that may not have been apparent early on.
