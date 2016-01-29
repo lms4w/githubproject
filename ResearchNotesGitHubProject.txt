@@ -458,3 +458,6 @@ One of the challenges of my project will be figuring out what users and reposito
 Sean Smith raised some great questions about how GitHub data can be used to analyze the extent to which public GitHub projects are re-used-- or are people making things public in the hopes that they will be reused. What are the expectations vs the reality of making projects open source?
 
 
+##29 January 2016##
+
+After talking with Nate Matias about the ethical implications of my project, I decided to take down my lists of DH users and repositories on GitHub in order to protect their privacy.
