@@ -460,4 +460,65 @@ Sean Smith raised some great questions about how GitHub data can be used to anal
 
 ##29 January 2016##
 
-After talking with Nate Matias about the design and ethical implications of my project, I decided to take down my lists of DH users and repositories on GitHub in order to protect their privacy.  These lists were based on searches of public GitHub  repositories, so there was nothing confidential, but people could wish to not have a light shone on their GitHub work, which I want to respect. I'm also persuaded that it makes sense to wait until data collection and cleaning are complete before sharing data, as complexities may arise during the research process that may not have been apparent early on.
+After talking with Nathan Matias about the design and ethical implications of my project, I decided to take down my lists of DH users and repositories on GitHub in order to protect privacy.  These lists were based on searches of public GitHub repositories, so there was nothing confidential, but people could wish to not have a light shone on their GitHub work, which I want to respect. I'm also persuaded that it makes sense to wait until data collection and cleaning are complete before sharing data, as complexities may arise during the research process that may not have been apparent early on.
+
+##30 January 2016##
+
+I wanted to jot down insights, ideas and questions developed during a conversation yesterday with Nathan Matias, to whom I am very grateful for his sharing time and expertise.
+
+Selecting whom to include in the study
+•	Look at those who don’t use GitHub as a point of contrast
+•	Is the sample biased toward the most successful cases? Look at people who logged in once and never managed to put together a full project
+
+Understanding relationships on GitHub
+•	What is the meaning of a friend relationship on GitHub?
+•	How many people do you give contributor status to?  How much trust do you give to everyday collaborators and to people outside the immediate project? Who has commit privileges? 
+
+Understanding usage patterns
+
+•	Do people use the issue tracker?
+•	Do people prefer a more modular approach to platforms, so that they might use GitHub for versioning but a separate issue tracker (as some prior research seems to indicate)?
+•	To what extent do people use GitHub for code vs other kinds of information (e.g. writing projects, syllabi, curated collections, etc)?
+
+Sampling
+Rather than trying to be comprehensive, which is practically impossible, I should examine a representative sample of digital humanists on GitHub. By sampling, I can cut down my work and employ a more valid approach. Creating a representative sample requires identifying a population to sample from (sampling frame) and using tools such as confidence intervals (5% is a reasonable confidence interval; online calculators can be used). It would be a good idea to reach out to a social scientist to help set up the sampling. For instance, I could focus on people who have presented at the Digital Humanities conference in the past three years—for 2013, that’s available at http://dh2013.unl.edu/abstracts/author.html , for 2014 at http://dharchive.org/metas.php?c=DH2014&t=authors and for 2015 it’s at http://dh2015.org/abstracts/.   To make the process faster and consistent, I could autogenerate search queries by pasting into a spreadsheet first name, last name, “github” and home institution. Searching Google rather than just GitHub would catch references to GitHub repositories in articles and other documents. A human would need to determine whether the right person has been identified through the search. 
+
+The representative sample should include infrequent as well as frequent users of GitHub, which would allow me to analyze the platform’s weaknesses as well as its strengths.  It would also be useful to look at a community that includes some DH folks but is wider, such as the MLA. Or I could look at a few universities.  
+
+Consent
+
+As I was initially defining the study, I determined that it would be fine to use and share data about public digital humanities users in GitHub because 1) the information is, after all, public; 2) identifying DH users and repositories could benefit them by bringing attention to their projects and facilitating collaboration; 3) the DH community would likely benefit from being able to more easily discover software development and writing projects; 4) sharing data about the DH community on GitHub would be consistent with its values of transparency and openness; and 5) sharing this data could facilitate reproducibility and further research.  I figured that there might be a small risk that someone could be embarrassed by not having many followers or having made few commits, but that the risk was minimal. So I shared via my GitHub account a csv file that listed 34 digital humanities repositories and 84 DH users, which I found by searching GitHub for “humanities” and for DH folks whose GitHub accounts I knew of; initially I recorded basic information like name, category and URL, but then I just captured the URL.  Frankly, I don’t think many people looked at this information, which had been in Github for about 2 months; between 1/17 and 1/30, 2016 there were two unique visitors, which I suspect were me and my collaborator. 
+
+However, my conversation with Nathan alerted me to some concerns I hadn’t really considered.  People with access to more time and resources would likely have a stronger GitHub presence—the “winner take all” problem. Some people may make commits at awkward times of the day, information that could be used in evaluating them for jobs. Even though the repositories are public, users may not necessarily want attention brought to them. They may not be aware how public GitHub repositories are, or they may make their repository public just because doing so is free. 
+
+So these concerns led me to delete my list of public DH GitHub users and repositories from GitHub and rethink my research questions. As Nathan suggested, it would be helpful to evaluate the social functions of GitHub: how do employers use these features? Why do people use GitHub? Do they think their GitHub presence will help their careers? Do people think that GitHub improves their public visibility in a positive way?  Do they use GitHub because collaborators or employers are doing so? What kind of stakes do users put into GitHub? It could be interesting to consider usage data in interviewing people in order to elicit information about why, for example, they don’t have many collaborators, or the current status of a project. 
+
+Before releasing any curated public data about GitHub users, I will contact them and give them the opportunity to opt out. I’ll also wait until the end of the research process before releasing data so that I can see if any unforeseen risks emerge. 
+
+To read: Benjamin Mako Hill, “Almost Wikipedia.”
+
+Research Questions
+
+I also wanted to jot down some notes from my meeting on 1/26 with my terrific collaborator Sean Smith. We focused on defining our research questions:
+
+•	What can we learn about the DH community through analyzing GitHub? How interconnected are people?
+•	What is the gender distribution on GitHub in the humanities vs GitHub writ large?
+•	What kinds of digital humanities projects are on GitHub? How do you know what counts as a digital humanities project?
+•	To find projects we can:
+      * Search “humanities” (“history,” “literature” and “library” turn out to have way too many irrelevant hits)
+      * Look for users affiliated with DH centers
+      * Look at conference presenters
+      * To understand projects we can look at file types
+
+•	To what extent does GitHub facilitate collaboration? We can explore this through:
+      * Interview questions
+      * Survey
+      * GitHub data: Who is collaborating? How many contributors? How many followers? What kind of connections?
+
+•	To what extent are people contributing to or re-using code? How much branching do we find? What does the branching look like?
+
+•	To what extent does our interview and survey data line up with what we find from looking at the GitHub data? The goal here is not “gotcha,” but to look at perception vs. data, and to see how the data can inform the kinds of questions we ask.
+
+•	How frequently is the repository updated? How recently was it updated? How long has the repository been on GitHub?
+
+In answering these questions, we want look at both users and repositories.
