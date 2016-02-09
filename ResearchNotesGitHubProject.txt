@@ -522,3 +522,15 @@ I also wanted to jot down some notes from my meeting on 1/26 with my terrific co
 •	How frequently is the repository updated? How recently was it updated? How long has the repository been on GitHub?
 
 In answering these questions, we want look at both users and repositories.
+
+##Feburary 8, 2016##
+
+I took the list of authors here: http://dh2015.org/abstracts/
+
+and converted it to a three column table with name, institution and country 
+Then I merged the first two fields with Github like so:
+=A2&"+"&B2&"+"&C2
+
+and created a link using the directions here http://webapps.stackexchange.com/questions/31079/generating-google-spreadsheet-hyperlinks-from-cell-contents
+like so: 
+=HYPERLINK(CONCATENATE("http://google.com/search?q=",D2),"link")
