@@ -523,7 +523,7 @@ I also wanted to jot down some notes from my meeting on 1/26 with my terrific co
 
 In answering these questions, we want look at both users and repositories.
 
-##Feburary 8, 2016##
+## Feburary 8, 2016 ##
 
 I took the list of authors here: http://dh2015.org/abstracts/
 
@@ -534,3 +534,14 @@ Then I merged the first two fields with Github like so:
 and created a link using the directions here http://webapps.stackexchange.com/questions/31079/generating-google-spreadsheet-hyperlinks-from-cell-contents
 like so: 
 =HYPERLINK(CONCATENATE("http://google.com/search?q=",D2),"link")
+
+## April 17, 2016 ##
+
+I finally worked my way through the spreadsheet of the 1721 people who presented at Digital Humanities 2013, 2014 and/or 2015. The process was pretty time consuming and sometimes involved judgment about whether I had found the right person (if I saw the DH 2014 network halo photo for their profile picture, I was pretty certain I had found my digital humanist). If I felt uncertain that the person with that name had presented at a DH conference, or if there were multiple people with the same name, I recorded "can't disambiguate" in the data. If I couldn't find a GitHub account for that person, I wrote null; otherwise I captured the URL associated with their GitHub account. Often if a person did have a GitHub account, that was the first result in Google, but sometimes I needed to dig a little more. About midway through the process, I decided to search GitHub as well as Google. It's possible that I missed a few people in the first part of the alphabet who have GitHub accounts that didn't come up in Google results. In a few cases, people did not use their full names with their accounts. If they included a photo or email address, used their complete name in the URL, or otherwise identified themselves, I included them in my dataset. 
+
+Next steps: 
+
+* try to capture email addresses of those with GitHub accounts using the GitHb API (partnering with Sean)
+* email DH GitHub users inviting them to opt out of being included in the dataset and asking them to take the survey and/or participate in an interview
+* try to determine gender and home country associated with GitHub users. Home country is typically included in the DH conference information, but it isn't necessarily easy to get at. I'm wondering about using automated tools to detect gender, but I realize that these can be unreliable. It would also be interesting to know what roles users play-- e.g. developer, managers, etc. 
+* think about surveying or interviewing not users. 
