@@ -545,3 +545,13 @@ Next steps:
 * email DH GitHub users inviting them to opt out of being included in the dataset and asking them to take the survey and/or participate in an interview
 * try to determine gender and home country associated with GitHub users. Home country is typically included in the DH conference information, but it isn't necessarily easy to get at. I'm wondering about using automated tools to detect gender, but I realize that these can be unreliable. It would also be interesting to know what roles users play-- e.g. developer, managers, etc. 
 * think about surveying or interviewing not users. 
+
+** July 5, 2016 **
+
+I've shifted from using GitHub to document the work in progress to using Open Science Framework.  There are a few reasons:
+
+* Concern about influencing the results of the survey and interviews by making information available here prematurely
+* Concern about publishing undigested information
+* The desire to explore Open Science Framework
+
+Once we're ready to publish our research, we plan to release de-identified data and notes from the interviews (with permission of the interviewees) here. 
